@@ -17,6 +17,10 @@ export const Container = styled.div`
     grid-row-gap: 0.5rem;
   }
 `;
+export const Span = styled.span`
+  font-size: 2rem;
+  padding-left: 5px;
+`;
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
@@ -48,7 +52,7 @@ export const Div3 = styled.div`
 // Navigation Links
 export const NavLink = styled.a`
   font-size: 2rem;
-  line-height: 32px;
+  line-height: 23px;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;
   &:hover {
