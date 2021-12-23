@@ -5,6 +5,7 @@ export const Img = styled.img`
   height:100%;
   object-fit: cover;
   overflow: hidden;
+  transition: 0.3s ease;
 `
 
 export const GridContainer = styled.section`
@@ -12,8 +13,8 @@ display: grid;
 grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 padding: 3rem;
 place-items: center;
-column-gap: 2rem;
-row-gap: 3rem;
+column-gap: 4rem;
+row-gap: 4rem;
 @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
   flex-direction: column;
@@ -29,6 +30,11 @@ export const BlogCard = styled.div`
   width: 400px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
+  }
+  &:hover {
+    background-color: #212d45; // bg color on hover
+    transform: scale(1.2);
+    cursor: pointer;
   }
 `;
 export const TitleContent = styled.div`
